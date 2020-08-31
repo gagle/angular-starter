@@ -1,0 +1,101 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "root": true,
+  "plugins": [
+    "@angular-eslint",
+    "@typescript-eslint",
+    "html",
+    "import",
+    "prefer-arrow",
+    "unicorn",
+    "simple-import-sort"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@angular-eslint/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:unicorn/recommended",
+        "plugin:compat/recommended",
+        "plugin:prettier/recommended",
+        "prettier",
+        "prettier/unicorn",
+        "prettier/@typescript-eslint",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "project": ["./tsconfig.base.json", "./tsconfig.eslint.json"],
+        "sourceType": "module"
+      },
+      "rules": {
+        "comma-dangle": ["error", "never"],
+        "sort-imports": "off",
+
+        "@angular-eslint/component-selector": [
+          "error",
+          { "type": "element", "prefix": "app", "style": "kebab-case" }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          { "type": "attribute", "prefix": "app", "style": "camelCase" }
+        ],
+        "@angular-eslint/no-host-metadata-property": "off",
+        "@angular-eslint/use-lifecycle-interface": "error",
+
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-unresolved": "off",
+        "import/order": "off",
+        "import/no-deprecated": "warn",
+        "import/no-extraneous-dependencies": "error",
+        "import/no-internal-modules": [
+          "error",
+          {
+            "allow": [
+              "@angular/**/*",
+              "@ngneat/spectator/jest",
+              "@/**/*",
+              "rxjs/ajax",
+              "rxjs/operators",
+              "rxjs/testing",
+              "rxjs/webSocket",
+              "src/environment/environment",
+              "zone.js/dist/zone"
+            ]
+          }
+        ],
+
+        "simple-import-sort/sort": "error",
+
+        "unicorn/filename-case": [
+          "error",
+          {
+            "case": "kebabCase"
+          }
+        ],
+        "unicorn/prevent-abbreviations": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts"],
+      "rules": {
+        "@typescript-eslint/unbound-method": "off"
+      }
+    },
+    {
+      "files": ["*.component.html"],
+      "extends": ["plugin:@angular-eslint/recommended"]
+    }
+  ]
+}

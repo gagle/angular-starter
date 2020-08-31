@@ -1,0 +1,8 @@
+{
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "trailingComma": "none",
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "importFormatting": "oneline"
+}

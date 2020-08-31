@@ -1,0 +1,9 @@
+{
+  "*.ts": [
+    "eslint --fix --cache"
+  ],
+  "*.scss": [
+    "stylelint --syntax scss --fix",
+    "prettier --write"
+  ]
+}
