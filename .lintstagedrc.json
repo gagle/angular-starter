@@ -1,9 +1,12 @@
 {
-  "*.ts": [
-    "eslint --fix --cache"
+  "*.html": [
+    "js-beautify -r"
   ],
   "*.scss": [
     "stylelint --syntax scss --fix",
     "prettier --write"
+  ],
+  "*.ts": [
+    "eslint --fix --cache"
   ]
 }

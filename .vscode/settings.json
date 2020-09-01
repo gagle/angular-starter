@@ -4,13 +4,9 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": false,
 
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
+    "editor.defaultFormatter": "HookyQR.beautify",
     "editor.formatOnSave": true
   },
   "[markdown]": {
@@ -37,5 +33,6 @@
 
   "eslint.options": {
     "extensions": [".ts", ".html"]
-  }
+  },
+  "prettier.disableLanguages": ["html", "json"]
 }
