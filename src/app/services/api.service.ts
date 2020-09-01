@@ -20,7 +20,9 @@ export class ApiService {
     throw new Error('Boom!');
   }
 
+
   
+
   getPost(): Observable<Post> {
     const url = 'https://jsonplaceholder.typicode.com/posts/1';
     return this.http
