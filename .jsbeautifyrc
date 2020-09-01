@@ -1,0 +1,13 @@
+{
+  "html": {
+    "end_with_newline": true,
+    "eol": "\n",
+    "indent_char": " ",
+    "indent_inner_html": false,
+    "indent_size": 2,
+    "max_preserve_newlines": 1,
+    "preserve_newlines": true,
+    "wrap_attributes": "force",
+    "wrap_line_length": 100
+  }
+}
