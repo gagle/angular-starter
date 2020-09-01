@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      // Angular Language Service
+      "Angular.ng-template",
+      // SVG Viewer
+      "cssho.vscode-svgviewer",
+      // ESLint
+      "dbaeumer.vscode-eslint",
+      // Prettier
+      "esbenp.prettier-vscode",
+      // JS Beautify
+      "HookyQR.beautify",
+      // Stylelint
+      "stylelint.vscode-stylelint",
+      // TODO comments highlight
+      "wayou.vscode-todo-highlight"
+    ]
+  }
+}
