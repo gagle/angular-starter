@@ -16,6 +16,8 @@
       "esbenp.prettier-vscode",
       // JS Beautify
       "HookyQR.beautify",
+      // Chrome Debugger
+      "msjsdiag.debugger-for-chrome",
       // Stylelint
       "stylelint.vscode-stylelint",
       // TODO comments highlight

@@ -1,6 +1,7 @@
 {
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "editor.detectIndentation": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -8,6 +9,9 @@
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify",
     "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": false
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -33,6 +37,5 @@
 
   "eslint.options": {
     "extensions": [".ts", ".html"]
-  },
-  "prettier.disableLanguages": ["html", "json"]
+  }
 }
