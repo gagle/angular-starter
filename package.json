@@ -10,7 +10,7 @@
     "lint:ts": "ng lint",
     "lint:scss": "stylelint src/**/*.scss --syntax scss --cache --fix",
     "start": "ng serve",
-    "start:build": "ws --spa index.html --directory dist/angular-starter --hostname localhost --port 1337",
+    "start:build": "ws --spa index.html --directory dist --hostname localhost --port 1337",
     "test": "jest --verbose --coverage",
     "test:ci": "jest --coverage"
   },
