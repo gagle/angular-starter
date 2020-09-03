@@ -2,9 +2,10 @@
   "name": "angular-starter",
   "version": "0.0.0",
   "scripts": {
-    "analyze-bundle": "webpack-bundle-analyzer dist/stats.json",
-    "build": "ng build --stats-json",
+    "build": "ng build",
     "build:prod": "ng build --prod",
+    "bundle:analyze": "source-map-explorer dist/**/*.js",
+    "bundle:build": "ng build --prod --source-map",
     "lint": "npm run lint:ts && npm run lint:scss && npm run lint:html && echo Linted all files successfully!",
     "lint:html": "js-beautify src/**/*.html -r",
     "lint:ts": "ng lint",
@@ -69,6 +70,7 @@
     "ng-mocks": "10.1.2",
     "prettier": "2.1.1",
     "prettier-eslint": "11.0.0",
+    "source-map-explorer": "2.5.0",
     "stylelint": "13.7.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
@@ -76,8 +78,7 @@
     "stylelint-order": "4.1.0",
     "stylelint-prettier": "1.1.2",
     "stylelint-scss": "3.18.0",
-    "typescript": "3.9.7",
-    "webpack-bundle-analyzer": "3.8.0"
+    "typescript": "3.9.7"
   },
   "jest-junit": {
     "outputDirectory": "./junit"

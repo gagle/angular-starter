@@ -26,8 +26,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -84,7 +89,9 @@
             "eslintConfig": ".eslintrc.json",
             "fix": true,
             "cache": true,
-            "lintFilePatterns": ["src"]
+            "lintFilePatterns": [
+              "src"
+            ]
           }
         }
       }

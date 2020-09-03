@@ -3,6 +3,7 @@
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "files.encoding": "utf8",
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "typescript.preferences.quoteStyle": "single",
