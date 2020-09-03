@@ -12,8 +12,6 @@
       "cssho.vscode-svgviewer",
       // ESLint
       "dbaeumer.vscode-eslint",
-      // NPM
-      "eg2.vscode-npm-script",
       // Prettier
       "esbenp.prettier-vscode",
       // JS Beautify
