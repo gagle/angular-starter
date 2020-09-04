@@ -4,13 +4,22 @@
     "stylelint-config-prettier"
   ],
   "plugins": [
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-no-unsupported-browser-features",
     "stylelint-order",
     "stylelint-scss",
-    "stylelint-no-unsupported-browser-features"
+    "stylelint-use-nesting",
+    "stylelint-z-index-value-constraint"
   ],
   "rules": {
+    "csstools/use-nesting": true,
+    "plugin/declaration-block-no-ignored-properties": true,
     "plugin/no-unsupported-browser-features": [true, {
       "severity": "warning"
-    }]
+    }],
+    "plugin/z-index-value-constraint": {
+      "min": 1,
+      "max": 100
+    }
   }
 }

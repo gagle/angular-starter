@@ -74,10 +74,13 @@
     "stylelint": "13.7.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-no-unsupported-browser-features": "4.0.0",
     "stylelint-order": "4.1.0",
     "stylelint-prettier": "1.1.2",
     "stylelint-scss": "3.18.0",
+    "stylelint-use-nesting": "3.0.0",
+    "stylelint-z-index-value-constraint": "1.1.0",
     "typescript": "3.9.7"
   },
   "jest-junit": {
