@@ -90,7 +90,8 @@
             "fix": true,
             "cache": true,
             "lintFilePatterns": [
-              "src"
+              "src/**/*.ts",
+              "src/**/*.component.html"
             ]
           }
         }

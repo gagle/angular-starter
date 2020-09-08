@@ -12,7 +12,8 @@
     "import",
     "prefer-arrow",
     "unicorn",
-    "simple-import-sort"
+    "simple-import-sort",
+    "unused-imports"
   ],
   "overrides": [
     {
@@ -34,13 +35,15 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "ecmaVersion": 2020,
-        "project": ["./tsconfig.base.json", "./tsconfig.eslint.json"],
-        "sourceType": "module"
+        "project": ["./tsconfig.eslint.json"]
       },
       "rules": {
         "comma-dangle": ["error", "never"],
         "sort-imports": "off",
+        "no-restricted-imports": ["error", {
+          "name": "@ngneat/spectator",
+          "message": "Use @ngneat/spectator/jest instead."
+        }],
 
         "@angular-eslint/component-selector": [
           "error",
@@ -52,6 +55,8 @@
         ],
         "@angular-eslint/no-host-metadata-property": "off",
         "@angular-eslint/use-lifecycle-interface": "error",
+
+        "@typescript-eslint/no-unused-vars": "off",
 
         "import/first": "error",
         "import/newline-after-import": "error",
@@ -84,7 +89,13 @@
             "case": "kebabCase"
           }
         ],
-        "unicorn/prevent-abbreviations": "off"
+        "unicorn/prevent-abbreviations": "off",
+
+        "unused-imports/no-unused-imports-ts": "error",
+        "unused-imports/no-unused-vars-ts": [
+            "error",
+            { "args": "after-used", "argsIgnorePattern": "^_" }
+        ]
       }
     },
     {
@@ -95,7 +106,11 @@
     },
     {
       "files": ["*.component.html"],
-      "extends": ["plugin:@angular-eslint/recommended"]
+      "extends": ["plugin:@angular-eslint/template/recommended"]
+    },
+    {
+      "files": ["*.component.ts"],
+      "extends": ["plugin:@angular-eslint/template/process-inline-templates"]
     }
   ]
 }
