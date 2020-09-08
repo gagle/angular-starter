@@ -1,0 +1,10 @@
+diff --git a/node_modules/@ngneat/spectator/lib/mock.d.ts b/node_modules/@ngneat/spectator/lib/mock.d.ts
+index 0caae8a..077a667 100644
+--- a/node_modules/@ngneat/spectator/lib/mock.d.ts
++++ b/node_modules/@ngneat/spectator/lib/mock.d.ts
+@@ -1,4 +1,4 @@
+-/// <reference types="jasmine" />
++
+ /** Credit: Valentin Buryakov */
+ import { FactoryProvider, Type, AbstractType } from '@angular/core';
+ declare type Writable<T> = {

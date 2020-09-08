@@ -119,4 +119,4 @@ There also extensions that needs to be installed. Just open the project and you 
 
 # Known issues
 
-- `@ngneat/spectator@5.13.3` has an explicit dependency with Jasmine types when type-checking Jest spec files, that's why spec files are currently being ignored when `npm run typecheck` is run.
+- `@ngneat/spectator@5.13.3` has an explicit dependency with Jasmine types when type-checking Jest spec files, that's why the library is patched in a postinstall hook to remove this dependency.
