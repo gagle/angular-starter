@@ -14,7 +14,8 @@
     "start:build": "ws --spa index.html --directory dist --hostname localhost --port 1337",
     "test": "jest --verbose --coverage",
     "test:ci": "jest --coverage",
-    "type-check": "tsc -p tsconfig.typecheck.json"
+    "type-check": "tsc -p tsconfig.typecheck.json",
+    "tsc": "tsc"
   },
   "private": true,
   "dependencies": {
