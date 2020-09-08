@@ -16,6 +16,18 @@ module.exports = {
       isolatedModules: true
     }
   },
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80
+    }
+  },
+  coverageReporters: [
+    'html',
+    'cobertura'
+  ],
   setupFilesAfterEnv: [
     './src/setup-jest.ts'
   ],
@@ -23,10 +35,6 @@ module.exports = {
   reporters: [
     'default',
     'jest-junit'
-  ],
-  coverageReporters: [
-    'html',
-    'cobertura'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',
