@@ -35,7 +35,7 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": ["./tsconfig.eslint.json"]
+        "project": "./tsconfig.eslint.json"
       },
       "rules": {
         "comma-dangle": ["error", "never"],
@@ -54,6 +54,9 @@
           { "type": "attribute", "prefix": "app", "style": "camelCase" }
         ],
         "@angular-eslint/no-host-metadata-property": "off",
+        "@angular-eslint/no-lifecycle-call": "error",
+        "@angular-eslint/no-pipe-impure": "error",
+        "@angular-eslint/use-injectable-provided-in": "error",
         "@angular-eslint/use-lifecycle-interface": "error",
 
         "@typescript-eslint/no-unused-vars": "off",
