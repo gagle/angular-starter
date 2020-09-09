@@ -41,7 +41,7 @@
 
   "eslint.options": {
     "extensions": [
-      ".html",
+      ".component.html",
       ".ts"
     ]
   },
