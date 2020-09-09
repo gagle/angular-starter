@@ -92,9 +92,6 @@
             "lintFilePatterns": [
               "src/**/*.ts",
               "src/**/*.component.html"
-            ],
-            "exclude": [
-              "src/app/assets/**"
             ]
           }
         }

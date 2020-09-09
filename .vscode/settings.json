@@ -1,8 +1,8 @@
 {
+  "editor.detectIndentation": false,
   "editor.formatOnSave": false,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-  "editor.detectIndentation": false,
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -18,32 +18,35 @@
     "editor.formatOnSave": false
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
 
   "eslint.options": {
-    "extensions": [".ts", ".component.html"]
+    "extensions": [
+      ".html",
+      ".ts"
+    ]
   },
   "eslint.validate": [
-    "typescript",
-    "html"
+    "html",
+    "typescript"
   ]
 }
