@@ -10,7 +10,10 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.formatOnSave": false
   },
