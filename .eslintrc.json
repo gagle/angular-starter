@@ -35,11 +35,11 @@
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": "./tsconfig.eslint.json"
+        "project": "./tsconfig.lint.json"
       },
       "rules": {
         "comma-dangle": ["error", "never"],
-        "eqeqeq": ["error", "always"],
+        "eqeqeq": "error",
         "sort-imports": "off",
         "no-restricted-imports": ["error", {
           "name": "@ngneat/spectator",

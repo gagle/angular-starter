@@ -25,16 +25,14 @@ module.exports = {
     }
   },
   coverageReporters: [
-    'html',
-    'cobertura'
+    'lcov'
   ],
   setupFilesAfterEnv: [
     './src/setup-jest.ts'
   ],
   restoreMocks: true,
   reporters: [
-    'default',
-    'jest-junit'
+    'default'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',

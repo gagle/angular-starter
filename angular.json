@@ -88,7 +88,6 @@
           "options": {
             "eslintConfig": ".eslintrc.json",
             "fix": true,
-            "cache": true,
             "lintFilePatterns": [
               "src/**/*.ts",
               "src/**/*.component.html"
