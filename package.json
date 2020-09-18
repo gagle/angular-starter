@@ -6,7 +6,7 @@
     "build:prod": "ng build --prod",
     "bundle:analyze": "source-map-explorer dist/**/*.js",
     "bundle:build": "ng build --prod --source-map",
-    "clean": "concurrently \"rimraf coverage\" \"rimraf npm-debug.log*\" \"npm cache verify\" \"npm prune\"",
+    "clean": "concurrently \"rimraf coverage\" \"rimraf dist\" \"rimraf npm-debug.log*\" \"npm cache verify\" \"npm prune\"",
     "lint": "npm run type-check && npm run lint:ts && npm run lint:scss && npm run lint:html && echo Linted all files successfully!",
     "lint:html": "js-beautify src/**/*.html -r",
     "lint:ts": "ng lint",
