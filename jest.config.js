@@ -28,7 +28,7 @@ module.exports = {
     'lcov'
   ],
   setupFilesAfterEnv: [
-    './src/setup-jest.ts'
+    '<rootDir>/src/setup-jest.ts'
   ],
   restoreMocks: true,
   reporters: [
