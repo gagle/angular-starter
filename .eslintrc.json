@@ -8,8 +8,8 @@
   "plugins": [
     "@angular-eslint",
     "@typescript-eslint",
-    "html",
     "import",
+    "no-use-extend-native",
     "prefer-arrow",
     "unicorn",
     "simple-import-sort",
@@ -18,6 +18,12 @@
   "overrides": [
     {
       "files": ["*.ts"],
+      "parserOptions": {
+        "project": [
+          "tsconfig.*?.json"
+        ],
+        "createDefaultProgram": true
+      },
       "extends": [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -33,14 +39,11 @@
         "plugin:jest/recommended",
         "plugin:jest/style"
       ],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "project": "./tsconfig.*?.json"
-      },
       "rules": {
         "comma-dangle": ["error", "never"],
         "eqeqeq": "error",
         "sort-imports": "off",
+        "no-extend-native": "error",
         "no-restricted-imports": ["error", {
           "name": "@ngneat/spectator",
           "message": "Use @ngneat/spectator/jest instead."
@@ -85,6 +88,10 @@
           }
         ],
 
+        "no-use-extend-native/no-use-extend-native": "error",
+
+        "prefer-arrow/prefer-arrow-functions": "error",
+
         "simple-import-sort/sort": "error",
 
         "unicorn/filename-case": [
@@ -111,7 +118,10 @@
     },
     {
       "files": ["*.component.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"]
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "max-len": ["error", { "code": 140 }]
+      }
     },
     {
       "files": ["*.component.ts"],

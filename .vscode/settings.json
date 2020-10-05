@@ -42,12 +42,12 @@
 
   "eslint.options": {
     "extensions": [
-      ".component.html",
-      ".ts"
+      ".ts",
+      ".component.html"
     ]
   },
   "eslint.validate": [
-    "html",
-    "typescript"
+    "typescript",
+    "html"
   ]
 }
