@@ -14,8 +14,7 @@
     "postinstall": "patch-package --patch-dir scripts/patches",
     "start": "ng serve",
     "start:build": "ws --spa index.html --directory dist --hostname localhost --port 1337",
-    "test": "jest --verbose --coverage",
-    "test:ci": "jest --coverage"
+    "test": "jest --verbose"
   },
   "private": true,
   "dependencies": {

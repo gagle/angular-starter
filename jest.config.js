@@ -1,5 +1,16 @@
 module.exports = {
-  preset: 'jest-preset-angular',
+  collectCoverage: true,
+  coverageReporters: [
+    'lcov'
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80
+    }
+  },
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tsconfig.spec.json',
@@ -16,17 +27,7 @@ module.exports = {
       isolatedModules: true
     }
   },
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80
-    }
-  },
-  coverageReporters: [
-    'lcov'
-  ],
+  preset: 'jest-preset-angular',
   setupFilesAfterEnv: [
     '<rootDir>/src/setup-jest.ts'
   ],
@@ -34,6 +35,7 @@ module.exports = {
   reporters: [
     'default'
   ],
+  testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
   testPathIgnorePatterns: [
     '/node_modules/',
     '/src/environments/'
