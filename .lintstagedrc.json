@@ -7,7 +7,6 @@
     "prettier --write"
   ],
   "*.ts": [
-    "tsc --experimentalDecorators --forceConsistentCasingInFileNames --noEmit --noFallthroughCasesInSwitch --noImplicitReturns --noUnusedLocals --noUnusedParameters  --strict",
     "eslint --fix"
   ]
 }
