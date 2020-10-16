@@ -96,6 +96,8 @@
 
         "simple-import-sort/sort": "error",
 
+        "unicorn/no-null": "off",
+        "unicorn/no-reduce": "off",
         "unicorn/filename-case": [
           "error",
           {
