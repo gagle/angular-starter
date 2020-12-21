@@ -12,6 +12,7 @@ Starter project for stand-alone Angular applications.
 - [Linting & Formatting](#linting-&-formatting)
 - [TypeScript path aliases](#typescript-path-aliases)
 - [VSCode](#vscode)
+  - [Enabling format on save](#enabling-format-on-save)
 - [Known issues](#known-issues)
 
 <br>
@@ -114,6 +115,49 @@ Marvelous! In a quick look we can distinguish between third-party modules, featu
 VSCode has been integrated with the linting and formatting project settings so each time a file is saved allt he magic will happen.
 
 There also extensions that needs to be installed. Just open the project and you will be prompted with a message to install them. They are listed in the `.vscode/extensions.json` file. Some of them are required but others are highly recommended.
+
+<br>
+
+## Enabling format on save
+
+In the user settings write these lines:
+
+```json
+"editor.formatOnSave": false,
+
+"[html]": {
+  "editor.defaultFormatter": "HookyQR.beautify",
+  "editor.formatOnSave": true
+},
+"[javascript]": {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+},
+"[markdown]": {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+},
+"[scss]": {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+},
+"[typescript]": {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
 
 <br>
 

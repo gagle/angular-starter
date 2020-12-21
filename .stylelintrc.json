@@ -1,7 +1,9 @@
 {
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-prettier"
+    "stylelint-config-prettier",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-idiomatic-order"
   ],
   "plugins": [
     "stylelint-declaration-block-no-ignored-properties",
@@ -13,6 +15,8 @@
   ],
   "rules": {
     "csstools/use-nesting": true,
+    "order/properties-alphabetical-order": null,
+
     "plugin/declaration-block-no-ignored-properties": true,
     "plugin/no-unsupported-browser-features": [true, {
       "severity": "warning"
